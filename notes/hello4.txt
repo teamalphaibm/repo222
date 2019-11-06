@@ -1,0 +1,32 @@
+# RestAPI-Boilerplate--node-express-couch-github
+MVC framework for API with functional testing using NodeJs and CouchDB and Github
+## List of dependencies/ libraries used
+    CouchDB     -   NoSQL database
+                    website: http://docs.couchdb.org/en/stable/
+    Express     -   Web framework
+                    npm url: https://www.npmjs.com/package/express
+    Nano        -   Offical Apache CouchDB library
+                    npm url: https://www.npmjs.com/package/nano
+    Body-parser -   Node.js body parsing middleware
+                    npm url: https://www.npmjs.com/package/body-parser
+    
+    Nodemon     -   Automatically restarting the node application when file changes in the directory are detected.
+                    npm url: https://www.npmjs.com/package/nodemon
+    
+    Octokit/rest-   GitHub REST API client for JavaScript
+                    npm url: https://www.npmjs.com/package/@octokit/rest    
+    
+## Installation
+### Set up a couchbase database
+    Create a database named "employees"
+### Git clone project into your own folder
+### Open up the app-setting.js
+    Replace "counchdb_url: '{ip address to the database}'
+### Open terminal
+    npm install
+    npm run start / start-dev (run with nodemon.js)
+### Open a new terminal
+    npm test
+    # Once completed:
+        1) the employees database will be filled with 10 sample docs
+        2) show all "TEST PASSED"
